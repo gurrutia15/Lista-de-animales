@@ -1,3 +1,7 @@
 form {
     font-family: 'Tajawal', sans-serif;
 }
+
+#resultado {
+    align-content: center;
+}

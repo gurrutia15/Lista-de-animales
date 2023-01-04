@@ -8,7 +8,12 @@
         return `El nombre del dueño es ${this.nombre}. El domicilio es: ${this.direccion} y el número telefónico de contacto: ${this.telefono}`}
     }
     
-   
+    // const p1 = new Propietario('Juan', 'Chile', '22345673')
+//     const p2 = new Propietario('María', 'Valparaíso', '334762837')
+// console.log(p1)
+// console.log(p2)
+// console.log(p1.datosPropietario())
+// console.log(p2.datosPropietario())
 
 class Animal1 extends Propietario{
     constructor(nombre, direccion, telefono, tipo){
@@ -19,7 +24,12 @@ class Animal1 extends Propietario{
         return this._tipo
     }
 }
-
+// const a1 = new Animal('Juan', 'Chile', '22345673', 'perro')
+// console.log(a1)
+// console.log(a1.nombre)
+// console.log(a1.direccion)
+// console.log(a1.telefono)
+// console.log(a1.tipo)
 
 class Mascota extends Animal1{
     constructor(nombre, direccion, telefono, tipo, nombreMascota , enfermedad){
@@ -43,10 +53,24 @@ class Mascota extends Animal1{
         return `El tipo de animal es un: ${this.tipo}, mientras que el nombre de la mascota es: ${this.nombreMascota} y la enfermedad es: ${this.enfermedad}`
     }
 }
+// const m1 = new Mascota('Juan', 'Chile', '22345673', 'perro','mona','distemper')
+// console.log(m1)
+// console.log(m1.nombre)
+// console.log(m1.direccion)
+// console.log(m1.telefono)
+// console.log(m1.tipo)
+// console.log(m1.nombreMascota)
+// console.log(m1.enfermedad)
+// console.log(m1.datosMascota())
 
 
-
-
+// let propietario = document.querySelector('#propietario').value
+// let telefono = document.querySelector('#telefono').value
+// let direccion = document.querySelector('#direccion').value
+// let nombreMascota = document.querySelector('#nombreMascota').value
+// let tipo = document.querySelector('#tipo').value
+// let enfermedad = document.querySelector('#enfermedad').value
+// let resultado = document.querySelector('#resultado').value
 let boton = document.querySelector('.btn')
 boton.addEventListener('click', observando);
 
